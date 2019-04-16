@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "description": "Sample react application",
   "homepage": "https://github.com/vishal423/react-sample",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vishal423/react-sample.git"
+  },
   "author": {
     "name": "Vishal Mahajan",
     "email": "vishal423@gmail.com",
