@@ -1,7 +1,8 @@
 import React from 'react';
-import { AppBar, Button, Toolbar, Typography, withStyles } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, withStyles } from '@material-ui/core';
 
 import Logo from '../../icons/Logo';
+import HeaderMenu from './menu';
 
 const styles = {
   root: {
@@ -25,7 +26,7 @@ export default withStyles(styles)(({ classes }) => {
         <Typography className={classes.brand} variant="h6" color="inherit">
           Sample Application
         </Typography>
-        <Button color="inherit">Login</Button>
+        <HeaderMenu />
       </Toolbar>
     </AppBar>
   );

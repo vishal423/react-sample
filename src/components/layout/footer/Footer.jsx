@@ -7,8 +7,8 @@ const styles = theme => ({
     position: 'absolute',
     bottom: 0,
     width: '100%',
-    backgroundColor: theme.palette.secondary.main,
-    color: theme.palette.secondary.contrastText
+    backgroundColor: theme.palette.primary.main,
+    color: theme.palette.primary.contrastText
   },
   body: {
     flexGrow: 1,

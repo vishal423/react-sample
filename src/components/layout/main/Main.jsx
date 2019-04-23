@@ -1,5 +1,9 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core';
+import { Switch, Route } from 'react-router-dom';
+
+import Home from '../../home';
+import { NotFound } from '../../error';
 
 const styles = theme => ({
   root: {
@@ -18,5 +22,13 @@ const styles = theme => ({
 });
 
 export default withStyles(styles)(({ classes, children }) => {
-  return <main className={classes.root}>{children}</main>;
+  return (
+    <main className={classes.root}>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route component={NotFound} />
+      </Switch>
+      {children}
+    </main>
+  );
 });

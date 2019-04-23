@@ -1,4 +1,6 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+
 import { withStyles, CssBaseline } from '@material-ui/core';
 
 import App from './app/App';
@@ -12,9 +14,11 @@ const styles = {
   }
 };
 
-export default withStyles(styles)(() => (
+export default withStyles(styles)(({ store }) => (
   <>
     <CssBaseline />
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </>
 ));
