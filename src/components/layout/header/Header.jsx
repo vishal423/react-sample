@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, withStyles } from '@material-ui/core';
 
-import Logo from '../../icons/Logo';
+import Logo from 'components/icons/Logo';
 import HeaderMenu from './menu';
 
 const styles = {

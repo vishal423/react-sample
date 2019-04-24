@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 
 import { withStyles, CssBaseline } from '@material-ui/core';
 
-import App from './app/App';
+import App from 'components/app/App';
 
 const styles = {
   '@global': {

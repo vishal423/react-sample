@@ -1,5 +1,5 @@
 {
-  "extends": ["airbnb", "prettier", "prettier/react"],
+  "extends": ["react-app", "airbnb", "prettier", "prettier/react"],
   "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": ["error"]
@@ -7,5 +7,12 @@
   "env": {
     "browser": true,
     "jest": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
   }
 }

@@ -2,8 +2,8 @@ import React from 'react';
 import { withStyles } from '@material-ui/core';
 import { Switch, Route } from 'react-router-dom';
 
-import Home from '../../home';
-import { NotFound } from '../../error';
+import Home from 'components/home';
+import { NotFound } from 'components/error';
 
 const styles = theme => ({
   root: {
